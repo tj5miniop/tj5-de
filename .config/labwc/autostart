@@ -2,4 +2,4 @@
 quickshell -c hyperion &
 
 # Polkit agent so GUI apps can ask for elevated permissions.
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/libexec/kf6/polkit-kde-authentication-agent-1 &
