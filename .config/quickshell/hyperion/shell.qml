@@ -26,7 +26,7 @@ ShellRoot {
                 anchors.fill: parent
                 fillMode: Image.PreserveAspectCrop
                 asynchronous: true
-                source: "file:///usr/share/hyperion/wallpapers/wallpaper.png"
+                source: "file:///usr/share/wallpapers/Hyperion-2026-08.png"
             }
         }
     }
