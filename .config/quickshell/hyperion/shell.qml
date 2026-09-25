@@ -9,7 +9,7 @@ FloatingWindow {
 
     Text {
     anchors.centerIn: parent
-    testL "Hello, World"
+    text: "Hello, World"
     color: "#0db9d7"
     font.pixelSize: 18
     }
