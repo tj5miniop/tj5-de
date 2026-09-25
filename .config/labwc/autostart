@@ -1,0 +1,9 @@
+# Setup Background services
+
+# swaybg
+swaybg -i /usr/share/hyperion/wallpapers/wallpaper.png
+
+
+# Status Bar
+#QUICKSHELL
+quickshell  -c hyperion
