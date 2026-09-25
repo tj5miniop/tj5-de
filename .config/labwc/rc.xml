@@ -25,4 +25,57 @@
       <calibrationMatrix>1 0 0 0 1 0</calibrationMatrix>
     </device>
   </libinput>
+
+
+  <keyboard>
+    <default />
+
+    <!-- Reload labwc config without restarting the session -->
+    <keybind key="W-S-r">
+      <action name="Reconfigure"/>
+    </keybind>
+
+    <!-- Terminal -->
+    <keybind key="W-Return">
+      <action name="Execute" command="ghostty"/>
+    </keybind>
+    <keybind key="W-S-Return">
+      <action name="Execute" command="alacritty"/>
+    </keybind>
+
+    <!-- App launcher -->
+    <keybind key="W-d">
+      <action name="Execute" command="wofi --show drun"/>
+    </keybind>
+
+    <!-- File manager -->
+    <keybind key="W-e">
+      <action name="Execute" command="thunar"/>
+    </keybind>
+
+    <!-- Window management -->
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-f">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+
+    <!-- Quit the session -->
+    <keybind key="W-S-e">
+      <action name="Exit"/>
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="root-menu"/>
+      </mousebind>
+    </context>
+  </mouse>
 </labwc_config>

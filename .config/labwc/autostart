@@ -1,9 +1,5 @@
-# Setup Background services
+# tj5-de autostart
+quickshell -c hyperion &
 
-# swaybg
-swaybg -i /usr/share/hyperion/wallpapers/wallpaper.png
-
-
-# Status Bar
-#QUICKSHELL
-quickshell  -c hyperion
+# Polkit agent so GUI apps can ask for elevated permissions.
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
