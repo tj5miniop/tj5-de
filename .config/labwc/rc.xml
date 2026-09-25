@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core>
+    <gap>3</gap>
+  </core>
+  <theme>
+    <cornerRadius>5</cornerRadius>
+    <name>Adwaita</name>
+    <dropShadows>yes</dropShadows>
+    <dropShadowsOnTiled>yes</dropShadowsOnTiled>
+    <icon>Adwaita</icon>
+    <maximizedDecoration>none</maximizedDecoration>
+  </theme>
+  <placement>
+    <policy>cursor</policy>
+  </placement>
+  <focus>
+    <followMouse>yes</followMouse>
+  </focus>
+  <libinput>
+    <device>
+      <tapButtonMap>lmr</tapButtonMap>
+      <clickMethod>buttonAreas</clickMethod>
+      <disableWhileTyping>no</disableWhileTyping>
+      <calibrationMatrix>1 0 0 0 1 0</calibrationMatrix>
+    </device>
+  </libinput>
+</labwc_config>
