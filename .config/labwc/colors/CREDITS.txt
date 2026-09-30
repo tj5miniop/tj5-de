@@ -1,1 +1,0 @@
-CREDIT TO - https://github.com/Harsh-bin/modern-labwc/blob/main/config/labwc/colors/nord.color
