@@ -1,0 +1,54 @@
+# Hyperion Noctalia Configuration
+
+# Appearance
+[shell]
+corner_radius_scale = 1.0
+button_borders = true
+input_borders = true
+popup_borders = true
+card_borders = true
+font-family = "Jetbrains Mono Nerd Font"
+
+# Date and Time
+time_format = "{:%H:%M}"
+date_format = "%A, %x"
+
+avatar_path = "~/Pictures/hyperion_avatar.png"
+
+
+# Wallpapers 
+[wallpaper] 
+enabled = true
+fill_mode = "crop"
+transition = ["fade"]
+transition_duration = 1500
+transition_on_startup = true 
+directory = "~/Wallpapers/"
+
+[wallpaper.automation] 
+enabled = true 
+interval_seconds = 120
+order = "random"
+recursive = true
+
+# Bar customisation
+[bar] 
+
+order = ["main"]
+
+[bar.default] 
+position = "top"
+enabled = true
+smart_auto_hide = true
+reserve_space = true
+
+thickness = 36 
+background_opacity = 56
+compositor_blur = true
+font_family = "Jetbrains Mono Nerd Font"
+
+# Layout
+start = ["launcher"] 
+center = ["clock"]
+end = ["network", "bluetooth", "volume", "brightness", "battery", "clipboard"]
+

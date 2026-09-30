@@ -1,0 +1,5 @@
+# tj5-de autostart
+noctalia &
+
+# Polkit agent so GUI apps can ask for elevated permissions.
+/usr/libexec/kf6/polkit-kde-authentication-agent-1 &

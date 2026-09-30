@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core>
+    <gap>3</gap>
+  </core>
+  <theme>
+    <cornerRadius>5</cornerRadius>
+    <name>Adwaita</name>
+    <dropShadows>yes</dropShadows>
+    <dropShadowsOnTiled>yes</dropShadowsOnTiled>
+    <icon>Adwaita</icon>
+    <maximizedDecoration>none</maximizedDecoration>
+  </theme>
+  <placement>
+    <policy>cursor</policy>
+  </placement>
+  <focus>
+    <followMouse>yes</followMouse>
+  </focus>
+  <libinput>
+    <device>
+      <tapButtonMap>lmr</tapButtonMap>
+      <clickMethod>buttonAreas</clickMethod>
+      <disableWhileTyping>no</disableWhileTyping>
+      <calibrationMatrix>1 0 0 0 1 0</calibrationMatrix>
+    </device>
+  </libinput>
+
+
+  <keyboard>
+    <default />
+    <!-- LABWC KEYBINDS FOR NOCTALIA !-->
+    <!-- Core keys -->
+    <keybind key="W-space"><action name="Execute"><command>noctalia msg panel-toggle launcher</command></action></keybind>
+    <keybind key="W-s"><action name="Execute"><command>noctalia msg panel-toggle control-center</command></action></keybind>
+    <keybind key="W-,"><action name="Execute"><command>noctalia msg settings-toggle</command></action></keybind>
+
+    <!-- Media keys -->
+    <keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>noctalia msg volume-up</command></action></keybind>
+    <keybind key="XF86AudioLowerVolume"><action name="Execute"><command>noctalia msg volume-down</command></action></keybind>
+    <keybind key="XF86AudioMute"><action name="Execute"><command>noctalia msg volume-mute</command></action></keybind>
+    <keybind key="XF86MonBrightnessUp"><action name="Execute"><command>noctalia msg brightness-up</command></action></keybind>
+    <keybind key="XF86MonBrightnessDown"><action name="Execute"><command>noctalia msg brightness-down</command></action></keybind>
+
+
+    <!-- Reload labwc config without restarting the session -->
+    <keybind key="W-S-r">
+      <action name="Reconfigure"/>
+    </keybind>
+
+    <!-- Terminal -->
+    <keybind key="W-Return">
+      <action name="Execute" command="ghostty"/>
+    </keybind>
+    <keybind key="W-S-Return">
+      <action name="Execute" command="alacritty"/>
+    </keybind>
+
+    <!-- App launcher -->
+    <keybind key="W-d">
+      <action name="Execute" command="wofi --show drun"/>
+    </keybind>
+
+    <!-- File manager -->
+    <keybind key="W-e">
+      <action name="Execute" command="thunar"/>
+    </keybind>
+
+    <!-- Window management -->
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-f">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+
+    <!-- Quit the session -->
+    <keybind key="W-S-e">
+      <action name="Exit"/>
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="root-menu"/>
+      </mousebind>
+    </context>
+  </mouse>
+</labwc_config>
