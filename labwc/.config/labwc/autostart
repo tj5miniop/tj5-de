@@ -1,5 +1,10 @@
 # tj5-de autostart
 noctalia &
 
+# Set Themes
+gsettings set org.gnome.desktop.interface gtk-theme "Colloid-Dark-Nord" &
+gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors" &
+gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-purple-dark" &
+
 # Polkit agent so GUI apps can ask for elevated permissions.
-/usr/libexec/kf6/polkit-kde-authentication-agent-1 &
+/usr/libexec/kf6/polkit-kde-authentication-agent-1

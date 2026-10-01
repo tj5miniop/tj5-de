@@ -5,10 +5,10 @@
   </core>
   <theme>
     <cornerRadius>5</cornerRadius>
-    <name>Adwaita</name>
+    <name>WhiteSur-purple-dark</name>
     <dropShadows>yes</dropShadows>
     <dropShadowsOnTiled>yes</dropShadowsOnTiled>
-    <icon>Adwaita</icon>
+    <icon>WhiteSur-purple-dark</icon>
     <maximizedDecoration>none</maximizedDecoration>
   </theme>
   <placement>
