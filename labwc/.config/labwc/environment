@@ -16,10 +16,10 @@ QT_QPA_PLATFORMTHEME=qt6ct
 # --- GTK ---
 #GDK_BACKEND=wayland,x11
 # GDK_DEBUG=no-portals  <<< USE if file pickers are slow!
-GTK_THEME=WhiteSur-purple-dark
-
-
-
+QT_QPA_PLATFORM=wayland;xcb
+XDG_SESSION_DESKTOP=labwc
+MOZ_ENABLE_WAYLAND=1
+ELECTRON_OZONE_PLATFORM_HINT=auto
 # --- Desktop (screen sharing & fastfetch) ---
 XDG_CURRENT_DESKTOP=labwc:wlroots
 XDG_SESSION_TYPE=wayland

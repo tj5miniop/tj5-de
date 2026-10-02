@@ -1,10 +1,17 @@
 # tj5-de autostart
+
+# Tell background services which session this is
+dbus-update-activation-environment --systemd \
+  WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE \
+  XCURSOR_THEME XCURSOR_SIZE
+
+# Themes, run in order in one background job
+(
+  gsettings set org.gnome.desktop.interface gtk-theme "Colloid-Dark-Nord"
+  gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-purple-dark"
+  gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors"
+  gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
+) &
+
+/usr/libexec/kf6/polkit-kde-authentication-agent-1 &
 noctalia &
-
-# Set Themes
-gsettings set org.gnome.desktop.interface gtk-theme "Colloid-Dark-Nord" &
-gsettings set org.gnome.desktop.interface cursor-theme "Vimix-cursors" &
-gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-purple-dark" &
-
-# Polkit agent so GUI apps can ask for elevated permissions.
-/usr/libexec/kf6/polkit-kde-authentication-agent-1
