@@ -31,9 +31,9 @@
     <default />
     <!-- LABWC KEYBINDS FOR NOCTALIA !-->
     <!-- Core keys -->
-    <keybind key="W-space"><action name="Execute"><command>noctalia msg panel-toggle launcher</command></action></keybind>
-    <keybind key="W-s"><action name="Execute"><command>noctalia msg panel-toggle control-center</command></action></keybind>
-    <keybind key="W-,"><action name="Execute"><command>noctalia msg settings-toggle</command></action></keybind>
+    <keybind key="W-x"><action name="Execute"><command>noctalia msg panel-toggle launcher</command></action></keybind>
+    <keybind key="W-space"><action name="Execute"><command>noctalia msg panel-toggle control-center</command></action></keybind>
+    <keybind key="W-z,"><action name="Execute"><command>noctalia msg settings-toggle</command></action></keybind>
 
     <!-- Media keys -->
     <keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>noctalia msg volume-up</command></action></keybind>
@@ -50,17 +50,8 @@
 
     <!-- Terminal -->
     <keybind key="W-Return">
-      <action name="Execute" command="ghostty"/>
-    </keybind>
-    <keybind key="W-S-Return">
       <action name="Execute" command="alacritty"/>
     </keybind>
-
-    <!-- App launcher -->
-    <keybind key="W-d">
-      <action name="Execute" command="wofi --show drun"/>
-    </keybind>
-
     <!-- File manager -->
     <keybind key="W-e">
       <action name="Execute" command="thunar"/>
