@@ -21,5 +21,5 @@ XDG_SESSION_DESKTOP=labwc
 MOZ_ENABLE_WAYLAND=1
 ELECTRON_OZONE_PLATFORM_HINT=auto
 # --- Desktop (screen sharing & fastfetch) ---
-XDG_CURRENT_DESKTOP=labwc:wlroots
+XDG_CURRENT_DESKTOP=wlroots
 XDG_SESSION_TYPE=wayland

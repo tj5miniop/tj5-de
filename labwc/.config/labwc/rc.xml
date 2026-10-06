@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <labwc_config>
   <core>
-    <gap>3</gap>
+    <gap>5</gap>
+    <decoration>server</decoration>
+    <adaptiveSync>no</adaptiveSync>
+    <allowTearing>no</allowTearing>
+    <autoEnableOutputs>yes</autoEnableOutputs>
+    <reuseOutputMode>no</reuseOutputMode>
+    <xwaylandPersistence>no</xwaylandPersistence>
+    <primarySelection>yes</primarySelection>
   </core>
   <theme>
     <cornerRadius>5</cornerRadius>

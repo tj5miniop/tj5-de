@@ -5,6 +5,11 @@ dbus-update-activation-environment --systemd \
   WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE \
   XCURSOR_THEME XCURSOR_SIZE
 
+# Run XDG-Desktop-Portals individually just in case
+/usr/lib/xdg-desktop-portal-wlr &
+/usr/lib/xdg-desktop-portal &
+
+
 # Themes, run in order in one background job
 (
   gsettings set org.gnome.desktop.interface gtk-theme "Colloid-Dark-Nord"
