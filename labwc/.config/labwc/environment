@@ -6,20 +6,20 @@ LANG=en_GB.UTF-8
 XCURSOR_THEME=Vimix-cursors
 XCURSOR_SIZE=24
 
-
-
-
 # --- Qt ---
 QT_QPA_PLATFORM=wayland
 QT_QPA_PLATFORMTHEME=qt6ct
 
 # --- GTK ---
-#GDK_BACKEND=wayland,x11
+GDK_BACKEND=wayland,x11
 # GDK_DEBUG=no-portals  <<< USE if file pickers are slow!
 QT_QPA_PLATFORM=wayland;xcb
-XDG_SESSION_DESKTOP=labwc
 MOZ_ENABLE_WAYLAND=1
-ELECTRON_OZONE_PLATFORM_HINT=auto
+
 # --- Desktop (screen sharing & fastfetch) ---
-XDG_CURRENT_DESKTOP=wlroots
+XDG_CURRENT_DESKTOP=labwc
 XDG_SESSION_TYPE=wayland
+XDG_SESSION_DESKTOP=labwc
+
+# --- Force Electron & Chromium to Use Wayland Natively ---
+ELECTRON_OZONE_PLATFORM_HINT=wayland

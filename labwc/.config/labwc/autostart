@@ -5,6 +5,12 @@ dbus-update-activation-environment --systemd \
   WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE \
   XCURSOR_THEME XCURSOR_SIZE
 
+# SystemD Fixes
+# Notify SystemD that the graphical session has started
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+systemctl --user start graphical-session.target
+
+
 # Run XDG-Desktop-Portals individually just in case
 /usr/lib/xdg-desktop-portal-wlr &
 /usr/lib/xdg-desktop-portal &
